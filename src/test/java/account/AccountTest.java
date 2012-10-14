@@ -1,17 +1,21 @@
 package account;
 
 import static org.junit.Assert.*;
+import junit.framework.Assert;
 
 import org.junit.Test;
 
 public class AccountTest {
 
-	Account account;
-	
 	@Test
-    public void testSlow() {
-	  account = new Account("tomas");	
-      assertEquals("tomas", account.getName());
-    }
-	
+	public void testAccount() {
+		Account account = new Account("Tomas");
+		assertEquals("Tomas", account.getName());
+	}
+
+	@Test
+	public void testGetName() {
+		Assert.assertTrue(true);
+	}
+
 }
